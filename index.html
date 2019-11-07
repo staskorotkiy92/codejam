@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Title</title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper__inner">
+    <header class="header">
+      <div class="flex header__container">
+        <div class="pop__menu">
+          <img src="assets/images/icons/pop_menu_icon.svg" alt="">
+        </div>
+        <h1 class="logo">CodeJam - Canvas</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main__container flex">
+        <div class="main__tool__section tool__section">
+          <div class="interaction__tools tools">
+            <ul class="interaction__tool__items tool__items  flex column">
+              <li class="tool__item interact__tool__item">
+                <img src="assets/images/icons/paint_bucket_icon.svg" alt="" class="tool__icon"><span class="tool__name">Paint bucket</span>
+              </li>
+              <li class="tool__item interact__tool__item">
+                <img src="assets/images/icons/color_choise_icon.svg" alt="" class="tool__icon"><span class="tool__name">Choose color</span>
+              </li>
+              <li class="tool__item interact__tool__item">
+                <img src="assets/images/icons/move_icon.svg" alt="" class="tool__icon"><span class="tool__name">Move</span>
+              </li>
+              <li class="tool__item interact__tool__item">
+                <img src="assets/images/icons/transofm_icon.svg" alt="" class="tool__icon"><span class="tool__name">Transform</span>
+              </li>
+            </ul>
+          </div>
+          <div class="color__choise__tools tools">
+            <ul class="color__choise__items tool__items  flex column">
+              <li class="tool__item color__choise__item">
+                <svg width="20" height="20" viewBox="0 0 20 20" class = "tool__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="9.5" fill="#C4C4C4" stroke="black"/>
+                </svg>
+                <span class="tool__name">Current color</span>
+              </li>
+              <li class="tool__item color__choise__item">
+                <svg width="20" height="20" viewBox="0 0 20 20" class = "tool__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="9.5" fill="#41F795" stroke="black"/>
+                </svg>
+                <span class="tool__name">Prev color</span>
+              </li>
+              <li class="tool__item color__choise__item">
+                <svg width="20" height="20" viewBox="0 0 20 20" class = "tool__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="9.5" fill="#F74141" stroke="black"/>
+                </svg>
+                <span class="tool__name">red</span>
+              </li>
+              <li class="tool__item color__choise__item">
+                <svg width="20" height="20" viewBox="0 0 20 20" class = "tool__icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="10" r="9.5" fill="#41B6F7" stroke="black"/>
+                </svg>
+                <span class="tool__name">blue</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="second__tool__section tool__section">
+          <div class="image__choise__tools tools">
+            <ul class="image__choise__items tool__items  flex column">
+              <li class="tool__item image__choise__item flex" id = "4">
+                <img src="assets/images/icons/image-choise-icon.svg" alt="" class="tool__icon"><span class="tool__name">4x4</span>
+              </li>
+              <li class="tool__item image__choise__item flex" id = "32">
+                <img src="assets/images/icons/image-choise-icon.svg" alt="" class="tool__icon"><span class="tool__name">32x32</span>
+              </li>
+              <li class="tool__item image__choise__item flex" id = "img">
+                <img src="assets/images/icons/image-choise-icon.svg" alt="" class="tool__icon"><span class="tool__name">Image</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="workspace">
+          <canvas class="canvas__space" id="canvas" width="512" height="512"></canvas>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class=""></div>
+    </footer>
+
+  </div>
+</div>
+<script src = 'js/index.js'></script>
+</body>
+</html>
